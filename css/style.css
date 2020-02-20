@@ -6,94 +6,59 @@ body {
 h1 {
  margin-left: 30px;
  letter-spacing: 1px;
+ text-align: center;
 }
 
 .container {
 width: 100;
-height: 100%;
-align-self: center;
+height: auto;
+display: grid;
 }
 
 .preview-baku {
 background-image: url("../images/baku.jpg");
-width: 100%;
-height: 100px;
+width: 200px;
+height: 200px;
 background-repeat: no-repeat;
 background-size: contain;
-margin: 10px;
 }
 
-@media only screen and (min-width: 575px) {
-    preview-baku {
-    background-image: url("../images/baku.jpg");
-  }
-}
-
-@media only screen and (min-width: 1199px) {
-    preview-baku {
-    background-image: url("../images/baku.jpg");
-  }
-}
 
 .preview-london {
 background-image: url("../images/london.png");
-width: 100%;
-height: 100px;
+width: 200px;
+height: 200px;
 background-repeat: no-repeat;
 background-size: contain;
-margin: 10px;
-}
 
-@media only screen and (min-width: 575px) {
-    preview-london {
-    background-image: url("../images/london.png");
-  }
-}
-
-@media only screen and (min-width: 1199px) {
-    preview-london {
-    background-image: url("../images/london.jpg");
-  }
 }
 
 .preview-madrid {
-  width: 100%;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-image: url("../images/madrid.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 10px;
 }
 
-@media only screen and (min-width: 575px) {
-    preview-madrid {
-    background-image: url("../images/madrid.jpg");
-  }
-}
-
-@media only screen and (min-width: 1199px) {
-    preview-madrid {
-    background-image: url("../images/madrid.jpg");
-  }
-}
 
 .preview-rome {
   background-image: url("../images/rome.jpg");
-  width: 100%;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 10px;
 }
 
 @media only screen and (min-width: 575px) {
-    preview-rome {
-    background-image: url("../images/rome.jpg");
+  .container {
+    grid-template-columns: repeat(2,1fr)
   }
-}
 
 @media only screen and (min-width: 1199px) {
-    preview-rome {
-    background-image: url("../images/rome.jpg");
+
+  .container {
+    grid-template-rows: 100vw;
+    grid-template-columns: repeat(4,1fr)
+
   }
-}
